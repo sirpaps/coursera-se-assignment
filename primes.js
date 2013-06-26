@@ -7,7 +7,7 @@ function isPrime( number ) {
 	if (number == 2 || number == 3)
 		return true;
 
-	if (number == 1 || ! (number % 2) || !(number % 3) )
+	if (number == 1 || !(number % 2) || !(number % 3) )
 		return false;
 
 	for ( var i = 5; i <= Math.ceil(Math.sqrt(number)); i += 2 ) {
@@ -20,16 +20,22 @@ function isPrime( number ) {
 
 
 function firstHundredPrimes() {
-	var firstHundred = []
-	  , i = 1;
+	var i = 1
+	  , j = 100
+	  , firstHundred = new Array( j );
 
-	while ( firstHundred.length < 100 && i++ ) {
-		if ( isPrime( i ) )
-			firstHundred.push( i );
+	while ( j-- ) {
+		for ( ; ; ) {
+			++i ;
+			if ( isPrime( i ) ) {
+				firstHundred[ 99 - j ] = i;
+				break;
+			}
+		}
 	}
 
 	return firstHundred;
 }
 
 
-fs.writeFileSync( 'primes.txt', firstHundredPrimes() );
+fs.writeFileSync( 'primes.txt', (firstHundredPrimes()).join(", ") );
