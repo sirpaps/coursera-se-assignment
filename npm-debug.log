@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'restler',
+1 verbose cli   'csv',
+1 verbose cli   'accounting' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.5
+4 verbose read json /Users/22bytes/hawkmode/coursera-se-assignment/package.json
+5 verbose read json /Users/22bytes/hawkmode/coursera-se-assignment/package.json
+6 verbose cache add [ 'restler', null ]
+7 verbose cache add name=undefined spec="restler" args=["restler",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'restler',
+8 verbose parsed url   path: 'restler',
+8 verbose parsed url   href: 'restler' }
+9 verbose cache add [ 'csv', null ]
+10 verbose cache add name=undefined spec="csv" args=["csv",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'csv',
+11 verbose parsed url   path: 'csv',
+11 verbose parsed url   href: 'csv' }
+12 verbose cache add [ 'accounting', null ]
+13 verbose cache add name=undefined spec="accounting" args=["accounting",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'accounting',
+14 verbose parsed url   path: 'accounting',
+14 verbose parsed url   href: 'accounting' }
+15 silly lockFile fb93280d-restler restler
+16 verbose lock restler /Users/22bytes/.npm/fb93280d-restler.lock
+17 silly lockFile 6cc98174-csv csv
+18 verbose lock csv /Users/22bytes/.npm/6cc98174-csv.lock
+19 silly lockFile 1853fd42-accounting accounting
+20 verbose lock accounting /Users/22bytes/.npm/1853fd42-accounting.lock
+21 silly lockFile fb93280d-restler restler
+22 verbose addNamed [ 'restler', '' ]
+23 verbose addNamed [ null, '' ]
+24 silly lockFile e35561c0-restler restler@
+25 verbose lock restler@ /Users/22bytes/.npm/e35561c0-restler.lock
+26 silly lockFile 6cc98174-csv csv
+27 verbose addNamed [ 'csv', '' ]
+28 verbose addNamed [ null, '' ]
+29 silly lockFile 34c7fd74-csv csv@
+30 verbose lock csv@ /Users/22bytes/.npm/34c7fd74-csv.lock
+31 silly lockFile 1853fd42-accounting accounting
+32 verbose addNamed [ 'accounting', '' ]
+33 verbose addNamed [ null, '' ]
+34 silly lockFile 3f9a2321-accounting accounting@
+35 verbose lock accounting@ /Users/22bytes/.npm/3f9a2321-accounting.lock
+36 silly lockFile e35561c0-restler restler@
+37 error Error: EACCES, open '/Users/22bytes/.npm/e35561c0-restler.lock'
+37 error  { [Error: EACCES, open '/Users/22bytes/.npm/e35561c0-restler.lock']
+37 error   errno: 3,
+37 error   code: 'EACCES',
+37 error   path: '/Users/22bytes/.npm/e35561c0-restler.lock' }
+38 error Please try running this command again as root/Administrator.
+39 error System Darwin 12.4.0
+40 error command "node" "/usr/local/bin/npm" "install" "restler" "csv" "accounting"
+41 error cwd /Users/22bytes/hawkmode/coursera-se-assignment
+42 error node -v v0.10.5
+43 error npm -v 1.2.18
+44 error path /Users/22bytes/.npm/e35561c0-restler.lock
+45 error code EACCES
+46 error errno 3
+47 error stack Error: EACCES, open '/Users/22bytes/.npm/e35561c0-restler.lock'
+48 verbose exit [ 3, true ]
