@@ -35,7 +35,7 @@ function firstHundredPrimes() {
 	}
 
 	return firstHundred;
-} 
+}
 
 
 fs.writeFileSync( 'primes.txt', (firstHundredPrimes()).join(", ") );
